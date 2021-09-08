@@ -36,4 +36,28 @@ function woocommerceshop_add_woocommercesupport_support() {
 }
 add_action( 'after_setup_theme', 'woocommerceshop_add_woocommercesupport_support' );
 
+//Ta Bort WooCommerce-stilar
+
+
+//Lägger till ett filter som avaktiverar stilar from WooCommerce.
+//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+//Ta bort shoptitel
+
+//Lägger till ett filter som tar bort den titel på shoppen som WooCommerce installerar automatiskt från början.
+//add_filter('woocommerce_show_page_title', '__return_false');
+
+
+//Lägger till support för olika visningsmetoder för bilder som kommer användas på sidan.
+
+//Gör att bild kan zoomas in på ett snyggt sätt.
+add_theme_support('wc-product-gallery-zoom');
+
+//Skapar support för att öppna bild i en separat ruta.
+add_theme_support('wc-product-gallery-lightbox');
+
+//Skapar support för bildspel.
+add_theme_support('wc-product-gallery-slider');
+
+
 }
