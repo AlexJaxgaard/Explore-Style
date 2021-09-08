@@ -117,7 +117,7 @@ section, footer, .content-area, main {
   }
 }
 
-/* 
+
 .main-header {
   display: -ms-grid;
   display: grid;
@@ -132,7 +132,7 @@ section, footer, .content-area, main {
   left: 0;
   right: 0;
   z-index: 1;
-} */
+} 
 
 .main-header a {
   text-decoration: none;
@@ -472,14 +472,14 @@ section, footer, .content-area, main {
   display: grid;
   gap: 20px;
 }
-/*
+
 @media screen and (min-width: 768px) {
   .footer {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
-*/
+
 .footer-container__heading {
   display: -webkit-box;
   display: -ms-flexbox;
