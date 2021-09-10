@@ -73,6 +73,7 @@ input {
 
     &__heading { 
         text-align: center;
+        max-width: 600px;
         max-width: 100%;
 
         span {
@@ -313,7 +314,7 @@ section, footer, .content-area, main {
 
     &::after {
         content: "";
-        background-image: url("https://images.hdqwalls.com/download/male-model-sitting-in-the-car-ralph-lauren-photoshoot-pz-3840x2160.jpg");
+        background-image: url("../images/hero-image@2x.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 60%;
