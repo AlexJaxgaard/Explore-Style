@@ -29,10 +29,8 @@
 
 
 <section class="shop-section">
-<h2 class="shop-section__heading">Women's Best Sellers</h2>
 <p class="shop-section__body">Our women's bestsellers. They are smooth and soft<br/> with adjustable elastic loop.</p>
 <div class="items">
-    Items
     <?php echo do_shortcode(' [best_selling_products] ') ?>
 </div>
 </section>
