@@ -14,7 +14,7 @@ $desktop-padding: 36px;
 html { font-size: 62.5%; }
 
 body {
-    margin: 0;
+    //margin: 0;
     font-size: 1.6rem;
     font-family: $body-font;
     font-weight: 300;
@@ -105,7 +105,7 @@ input {
 }
 
 section, footer, .content-area, main {
-    margin: 0 auto;
+    margin: 80;
     padding: $mobile-padding;
 
     @include tablet-portrait {
@@ -155,8 +155,8 @@ section, footer, .content-area, main {
             align-items: center;
 
             .menu-item {
-              /*  display: inline-block;*/
-                padding: 0 32px;
+               display: inline-block;
+                padding: 0 80px;
 
                 &:hover .sub-menu {
                     display: block;
@@ -314,7 +314,9 @@ section, footer, .content-area, main {
 
     &::after {
         content: "";
-        background-image: url("../images/hero-image@2x.jpg");
+
+        //Bakgr
+        background-image: url("../images/landing.mp4");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 60%;
