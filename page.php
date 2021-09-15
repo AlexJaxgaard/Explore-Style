@@ -6,7 +6,7 @@
             while(have_posts()) : the_post();
     ?>
 
-    <div class="page-hero" style="background-image:url('<?php the_post_thumbnail_url('large'); ?>')">
+    <div class="page-hero" style="background-image:url('<?php the_post_thumbnail_url('/Users/scandinaviana/Documents/Explore-Style/images/cart.png'); ?>')">
         <h1 class="page-hero__heading"><?php the_title(); ?></h1>
     </div>
 
