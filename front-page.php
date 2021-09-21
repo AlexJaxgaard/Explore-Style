@@ -40,8 +40,11 @@
 <h2 class="shop-section__heading">New Arrivals</h2>
 <p class="shop-section__body">New arrivals. Updated every<br/> day. It's time to explore.</p>
 <div class="items">
-    Items
+<?php echo do_shortcode(' [best_selling_products] ') ?>
 </div>
-</section>
+
+
+
+
 
 <?php get_footer(); ?>
