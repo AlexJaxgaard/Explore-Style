@@ -123,11 +123,12 @@ section, footer, .content-area, main {
   display: grid;
   gap: 10px;
   grid-template: 'nav logo tools';
-  -ms-grid-columns: (1fr)[3];
+  //-ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding: 18px;
   background-color: white;
   position: absolute;
+  
   top: 0;
   left: 0;
   right: 0;
