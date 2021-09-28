@@ -128,7 +128,7 @@ section, footer, .content-area, main {
     'nav logo tools';
     grid-template-columns: repeat(3, 1fr);
     padding: 18px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top:0; left: 0; right: 0;
     z-index: 1;
@@ -175,7 +175,7 @@ section, footer, .content-area, main {
                 left: 0; right: 0;
                 display: block;
                 height: 0.2rem;
-                background-color: rgba(0,0,0,1);
+                background-color: rgb(0, 0, 0);
 
                 &:first-child { top: 0; }
                 &:last-child { bottom: 0; }
