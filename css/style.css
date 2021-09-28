@@ -78,6 +78,7 @@ input {
 .wrapper__heading {
   text-align: center;
   max-width: 600px;
+  color: white;
 }
 
 .wrapper__heading span {
@@ -123,7 +124,7 @@ section, footer, .content-area, main {
   display: grid;
   gap: 10px;
   grid-template: 'nav logo tools';
-  //-ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding: 18px;
   background-color: white;
@@ -187,7 +188,7 @@ section, footer, .content-area, main {
   right: 0;
   display: block;
   height: 0.2rem;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .main-header__nav .menu-link span:first-child {
@@ -288,7 +289,7 @@ section, footer, .content-area, main {
 .mobile-menu .sub-menu {
   display: none;
   padding: 0;
-  background-color: #fff;
+  background-color: black;
   min-width: 140px;
   z-index: 1;
 }
@@ -311,7 +312,7 @@ section, footer, .content-area, main {
 }
 
 .mobile-menu .sub-menu .menu-item a:hover {
-  background-color: #ddd;
+  background-color: rgb(0, 0, 0);
 }
 
 /* Hero
