@@ -269,6 +269,9 @@ section, footer, .content-area, main {
     grid-template: 'logo nav tools';
     background-color: rgb(255 255 255 / 32%);
   }
+
+
+
   .main-header__logo {
     -ms-grid-column-align: start;
         justify-self: start;
@@ -281,6 +284,12 @@ section, footer, .content-area, main {
     display: block;
   }
   .main-header__nav .menu-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .top-brands {
     display: none;
   }
 }
@@ -474,12 +483,7 @@ section, footer, .content-area, main {
   font-style: italic;
 }
 
-@media screen and (min-width: 768px) {
-  .newsletter {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-  }
-}
+
 
 .form__email {
   width: 100%;
