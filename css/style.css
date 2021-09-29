@@ -17,6 +17,7 @@ body {
   font-style: normal;
   color: black;
   line-height: 3rem;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +54,27 @@ a:link:hover {
 
 a:visited, a:active {
   color: black;
+}
+
+.myGallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.myGallery img {
+  width: 100%;
+}
+
+
+
+.myGallery .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.myGallery .item img {
+  vertical-align: middle;
 }
 
 /* Inputs */
@@ -319,6 +341,7 @@ section, footer, .content-area, main {
 ==============================================*/
 .hero {
   position: relative;
+  background-color: ;
 }
 
 .hero::after {
