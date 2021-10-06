@@ -36,6 +36,10 @@ wp_nav_menu(array(
 ))
 ?>
             </div>
+            <div class="footer-container">
+            <img src="/wp-content/themes/Explore-Style/images/es.png" alt="Explore Style Logo" width="250" height="250">
+
+            </div>
         </div>
 
         <div class="copyright">
