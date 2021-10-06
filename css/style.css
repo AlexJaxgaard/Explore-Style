@@ -79,7 +79,7 @@ a:visited, a:active {
 
 
 
-}
+
 
 /* Inputs */
 input {
@@ -150,7 +150,7 @@ section, footer, .content-area, main {
   display: grid;
   gap: 10px;
   grid-template: 'nav logo tools';
-  -ms-grid-columns: (1fr)[3];
+  
       grid-template-columns: repeat(3, 1fr);
   padding: 18px;
   background-color: white;
@@ -356,7 +356,7 @@ section, footer, .content-area, main {
 ==============================================*/
 .hero {
   position: relative;
-  background-color: ;
+  
 }
 
 .hero::after {
@@ -510,7 +510,7 @@ section, footer, .content-area, main {
 
 @media screen and (min-width: 768px) {
   .footer {
-    -ms-grid-columns: (1fr)[4];
+    
         grid-template-columns: repeat(4, 1fr);
   }
 }
