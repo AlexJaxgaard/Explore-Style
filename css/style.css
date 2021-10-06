@@ -77,6 +77,10 @@ a:visited, a:active {
   vertical-align: middle;
 }
 
+
+
+}
+
 /* Inputs */
 input {
   border: none;
@@ -289,11 +293,12 @@ section, footer, .content-area, main {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1429px) {
   .top-brands {
     display: none;
   }
 }
+
 
 /* Mobile Menu
 ==============================================*/
