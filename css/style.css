@@ -165,7 +165,8 @@ section, footer, .content-area, main {
 
 .main-header__logo {
   grid-area: logo;
-  font-size: 2.4rem;
+  font-family: "Baskerville", sans-serif;
+  font-size: 2rem;
   font-weight: 600;
   -ms-grid-column-align: center;
       justify-self: center;
