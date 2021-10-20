@@ -23,7 +23,7 @@
     <a href="./product-tag/dickies/"><img src="/wp-content/themes/Explore-Style/images/brands/dickies.png" /></a>
     <a href="./product-tag/levis/"><img src="/wp-content/themes/Explore-Style/images/brands/levis.png" /></a>
     <a href="./product-tag/vans/"><img src="/wp-content/themes/Explore-Style/images/brands/vans.jpeg" /></a>
-    <a href="./product-tag/fila/"><img src="/wp-content/themes/Explore-Style/images/brands/fila.png" /></a>
+    <a href="./product-tag/fila/"><img src="/wp-content/themes/Explore-Style/images/brands/fila.gif" /></a>
 
   </div>
 </section>
