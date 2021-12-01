@@ -19,6 +19,23 @@ body {
   line-height: 3rem;
   
 }
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product p.stock {
+  color: rgb(0, 0, 0);
+}
+
+.woocommerce span.onsale {
+  background-color: black;
+}
+
+.woocommerce button.button.alt, .woocommerce button.button.alt:hover {
+  
+  background-color: black;
+
+}
+
+.woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover{
+  background-color: black;
+}
 
 .woocommerce .quantity .qty {
   width: 4.8em;
