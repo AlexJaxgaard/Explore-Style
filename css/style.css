@@ -170,6 +170,12 @@ section, footer, .content-area, main {
   }
 }
 
+@media screen and (max-width: 300px) {
+  footer, .footer-container__body, .footer-container__heading {
+    display: none;
+  }
+}
+
 
 .main-header {
   display: -ms-grid;
@@ -534,12 +540,13 @@ section, footer, .content-area, main {
   gap: 20px;
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .footer {
     
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;  }
+}*/
 
 .footer-container__heading {
   display: -webkit-box;
@@ -564,7 +571,7 @@ section, footer, .content-area, main {
 
 @media screen and (min-width: 768px) {
   .footer-container__body {
-    display: block;
+    /*display: block;*/
   }
   .footer-container__heading {
     -webkit-box-pack: start;
