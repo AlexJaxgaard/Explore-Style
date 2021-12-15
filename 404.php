@@ -15,7 +15,7 @@
 
 
 
-    <div class="page-hero" style="background-image:url('https://wallpapercrafter.com/dwn.php?f=6583-man-city-loneliness-fog-street-4k.jpg')">
+    <div class="page-hero" style="background-image:url('images/404.jpg')">
         <h1 class="page-hero__heading">404 - Error<?php the_title(); ?></h1>
         
     </div>
