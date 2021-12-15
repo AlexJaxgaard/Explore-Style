@@ -104,7 +104,7 @@ input {
     background-color: #fff;
 }
 
-section, footer, .content-area, main {
+section, .content-area, main {
     margin: 80;
     padding: $mobile-padding;
 
@@ -445,9 +445,20 @@ display: inline;
 
 
 /* Footer */
-.footer {
-    display: grid;
-    gap: 20px;
+
+    @media screen and (min-width: 651px) {
+        .footer {
+            display: grid;
+            gap: 20px;
+        } 
+    }
+
+
+    @media screen and (max-width: 650px) {
+        .footer {
+          display: none;
+        } 
+    }
 
     @include tablet-portrait {
         grid-template-columns: repeat(4, 1fr)
@@ -484,7 +495,7 @@ display: inline;
             }
         }
     }
-}
+
 
 
 /* CopyRight */
