@@ -165,16 +165,13 @@ section, footer, .content-area, main {
 }
 
 @media screen and (min-width: 768px) {
-  section, footer, .content-area, main {
+  section, .content-area, main {
     padding: 80px;
   }
 }
 
-@media screen and (max-width: 300px) {
-  footer, .footer-container__body, .footer-container__heading {
-    display: none;
-  }
-}
+
+
 
 
 .main-header {
@@ -534,20 +531,22 @@ section, footer, .content-area, main {
 }
 
 /* Footer */
+@media screen and (max-width: 650px) {
+  .footer {
+    display: block;
+    text-align: center;
+   }
+}
+@media screen and (min-width: 650px) {
 .footer {
-  display: -ms-grid;
-  display: grid;
+  padding: 90px;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  display: grid;
+}
 }
 
-/*@media screen and (max-width: 768px) {
-  .footer {
-    
-    display: -ms-grid;
-    display: grid;
-    gap: 20px;  }
-}*/
-
+@media screen and (min-width: 650px) {
 .footer-container__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,9 +555,15 @@ section, footer, .content-area, main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-container__heading {
+text-align: center;
+  }
+  }
 
 .footer-container__body {
-  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -571,7 +576,7 @@ section, footer, .content-area, main {
 
 @media screen and (min-width: 768px) {
   .footer-container__body {
-    /*display: block;*/
+    display: block;
   }
   .footer-container__heading {
     -webkit-box-pack: start;
