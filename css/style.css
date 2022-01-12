@@ -390,7 +390,7 @@ section, footer, .content-area, main {
 
 .hero::after {
   content: "";
-  background-image: url("../images/hero-image@2x.jpeg");
+  background-image: url("../images/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
