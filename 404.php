@@ -15,7 +15,7 @@
 
 
 
-    <div class="page-hero" style="background-image:url('images/404.png')">
+    <div class="page-hero" style="background-image:url('/wp-content/themes/Explore-Style/images/404.png')">
         <h1 class="page-hero__heading">404 - Error<?php the_title(); ?></h1>
         
     </div>
