@@ -17,7 +17,7 @@
             while(have_posts()) : the_post();
     ?>
 
-    <div class="page-hero" style="background-image:url('<?php the_post_thumbnail_url('../images/cart.jpeg'); ?>')">
+    <div class="page-hero" style="background-image:url('<?php the_post_thumbnail_url('../images/cart.jpg'); ?>')">
         <h1 class="page-hero__heading"><?php the_title(); ?></h1>
     </div>
 
