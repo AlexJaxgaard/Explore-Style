@@ -42,10 +42,14 @@ h2 { font-size: 2.8rem; }
 
 /* Links */
 a:link {
-    color: $primary-color;
+    color: white;
     &:hover {
-        color: rgba(0,0,0,0.6);
+        color: rgb(255, 255, 255);
     }
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+    color: white;
 }
 
 a:visited, a:active { color: $primary-color; }
