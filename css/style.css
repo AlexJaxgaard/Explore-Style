@@ -172,8 +172,13 @@ section, footer, .content-area, main {
 }
 
 
+.edit-post-visual-editor .editor-block-list__block .wc-block-grid__product-title, .editor-styles-wrapper .wc-block-grid__product-title, .wc-block-grid__product-title {
+  color: rgb(0, 0, 0);
+}
 
-
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  color: white;
+}
 
 .main-header {
   display: -ms-grid;
