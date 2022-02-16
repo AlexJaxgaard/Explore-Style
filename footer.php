@@ -7,7 +7,7 @@
 
 </head>
 
-
+<!-- Code above defines meta data for the specific page -->
 
 <footer>
         <div class="footer">
@@ -46,10 +46,12 @@ wp_nav_menu(array(
 
 ))
 ?>
+
+<!-- Scripts above (ln 12-48) creates three menus, and links up with WooCommerce and Wordpress, make sure to enter the correct menu id when creating the menus in Wordpress  -->
             </div>
             <div class="footer-container">
             <img src="/wp-content/themes/Explore-Style/images/es.png" alt="Explore Style Logo" width="250" height="250">
-
+<!-- Adds image to the bottom of the page -->
             </div>
         </div>
 
@@ -65,6 +67,7 @@ wp_nav_menu(array(
 
 <?php wp_footer(); ?>
 
+<!-- Pulls footer from footer.php -->
 
 
 </body>

@@ -1,6 +1,7 @@
 @import "_breakpoints.scss";
+/*Imports important data from _breakpoints.scss, DO NOT CHANGE THAT FILE IF YOU DO NOT KNOW WHAT YOU'RE DOING*/
 
-/* Veriables
+/* Variables, used to define different properties for WooCommerce
 ==============================================*/
 $primary-color: rgba(0,0,0,1);
 $headings-font: 'Playfair Display', serif;
@@ -393,36 +394,7 @@ display: inline;
 }
 
 
-/* Block */
-.promo-card {
-    text-decoration: none;
-    padding: $mobile-padding;
-    margin-bottom: 20px;
 
-    &:hover {
-        text-decoration: underline;
-    }
-
-    /* Element */
-    &__body { max-width: 70%; }
-
-    /* Modifiers */
-    &--gray { background-color: #f2f3f5; }
-
-    &--women {
-        background-image: url("../images/female.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: calc(100% - -50px);
-    }
-
-    &--men {
-        background-image: url("../images/male.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: calc(100% - -30px);
-    }
-}
 
 
 /* Shop Section */
@@ -432,20 +404,6 @@ display: inline;
     }
 }
 
-
-
-
-.form {
-    &__email {
-        width: 100%;
-        margin-bottom: 20px;
-        border-bottom: 1px solid $primary-color;
-    }
-
-    &__submit {
-        width: 100%;
-    }
-}
 
 
 /* Footer */
@@ -515,19 +473,3 @@ display: inline;
 }
 
 
-/* Page Hero */
-.page-hero {
-    display: grid;
-    height: 60vh;
-    background-color: #ececec;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-items: center;
-    align-items: center;
-    background-image:'https://media.gq.com/photos/59af20a43482f876ccb37eee/16:9/w_2240,c_limit/gq-suite-guide-thomas-whiteside05.jpg' ;
-    color: #fff;
-    margin: 20px 0;
-
-    &__heading { color: #fff; }
-}

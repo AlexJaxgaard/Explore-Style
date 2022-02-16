@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Style - Home</title>
 </head>
+<!-- Above is used for defining meta data about the specific page. -->
 
 
-
-<?php get_header(); ?>
+<?php get_header(); ?> <!-- Pulls header from header.php -->
 
 
 <section class="hero">
@@ -23,9 +23,10 @@
             </div>
         </a>
     </section>
+    <!-- Main top ad/image for new collection -->
 
     <section class="top-brands">
-        <h2 class="shop-section__heading">Top Brands</h2>
+        <h2 class="shop-section__heading">Top Brands</h2> <!-- line 28-41 is for the brands-part of the page. shows different selection of brands and will link up with woocommerce to show user the selected brand. -->
     <div class="myGallery">
     <a href="./product-tag/adidas/"><img alt="Adidas Logo" src="/wp-content/themes/Explore-Style/images/brands/adidas.jpeg" /></a>
     <a href="./product-tag/thenorthface/"><img alt="The North Face Logo" src="/wp-content/themes/Explore-Style/images/brands/northface.png" /></a>
@@ -57,8 +58,11 @@
 </div>
 </section>
 
+<!-- Pulls product info from WooCommerce, for more information about shortcode, see: https://woocommerce.com/document/woocommerce-shortcodes/ -->
 
 
 
 <?php get_footer(); ?>
+
+<!-- Pulls footer from footer.php -->
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+/* This page is used for activating/de-activating various functions on the page, to remove a function, simply add multi-line comments. this page is not publically visible. */
 
 /* Adding CSS & JS */
 function woocommerce_custom_theme() {
@@ -16,7 +17,7 @@ function woocommerce_custom_theme() {
 add_action( 'wp_enqueue_scripts', 'woocommerce_custom_theme' );
 
 
-/* Creating Custom Menu */
+/* Creating Custom Menu */ 
 function woocommerce_custom_menu(){
     register_nav_menu('top-menu',__('WooCommerce Custom Menu', 'woocommercecustommenu'));
 }
@@ -44,3 +45,4 @@ if (class_exists('WooCommerce')) {
     add_theme_support( 'wc-product-gallery-slider' );
 
 }
+

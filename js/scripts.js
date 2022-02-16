@@ -13,3 +13,4 @@ jQuery( document ).ready(function() {
 
 }); 
 
+/*This document defines important scripts, for menus and search queries. DO NOT change this document if you do not know what you're doing.*/
