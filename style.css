@@ -1,19 +1,597 @@
 /* Boostrap, for more info regarding the different properties, see documentation */
 
-/*
-Theme Name: Explore Style 
-Theme URI: https://github.com/BenBrew/Explore-Style/
-Author: Alexander Jaxgaard
-Author URI: https://github.com/BenBrew/
-Description: This theme is a part of the my final project for high school. The theme is based on HTML, CSS, PHP, and JS. See further prerequisities below. Further prerequisities can be found on the official GitHub page for the Theme, which also is linked below. The theme is created for e-commerce sites, mainly within fashion, but can be used for other stores as well. The required plugin(s) for this theme is: WooCommerce. The site is tested for PHP version 5.6.40, MySQL version 10.1.30-MariaDB.
-Tags: e-commerce, fashion, woocommerce
-Version: 1.1.0
-Requires at least: 1.0
-Tested up to: 1.1.0
-Requires PHP: 5.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: explorestyle
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+/*********************
+    BREAKPOINTS
+*********************/
+/* Veriables
+==============================================*/
+/* Main
+==============================================*/
+html {
+  font-size: 62.5%;
+}
+/*Defines font size for all elements within the <html> tag*/
+body {
+  margin: 0; 
+  font-size: 1.6rem;
+  font-family: stolzl, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
+  line-height: 3rem;
+  
+}
+/*Defines basic attributes for all elements within the <body> tag*/
+.woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce div.product p.stock {
+  color: rgb(0, 0, 0);
+}
+.woocommerce span.onsale {
+  background-color: black;
+}
+
+.woocommerce button.button.alt, .woocommerce button.button.alt:hover {
+  
+  background-color: black;
+color: white; 
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: black;
+}
+
+.woocommerce a.button.alt {
+  background-color: black;
+}
+
+.woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover{
+  background-color: black;
+}
+/*Changes color of all elements defined above, mainly for aesthetic reasons*/
+.woocommerce .quantity .qty {
+  width: 4.8em;
+  height: 2.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+.product_title {
+  font-size: 4.0rem;
+}
+  
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+
+/* Links */
+a:link {
+  color: black;
+}
+
+a:link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+a:visited, a:active {
+  color: black;
+}
+/*Changes color of all elements defined above, mainly for aesthetic reasons*/
+.myGallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.myGallery img {
+  width: 100%;
+}
+
+
+
+.myGallery .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.myGallery .item img {
+  vertical-align: middle;
+}
+
+/*Defines properties of of the .myGallery element, code for that can be found in functions.php, mainly for aesthetic reasons*/
+
+
+
+/* Inputs */
+input {
+  border: none;
+  background-image: none;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*Changes layouts for inputs*/
+
+/* Layout Elements
+==============================================*/
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.wrapper__heading {
+  text-align: center;
+  max-width: 600px;
+  color: white;
+}
+
+.wrapper__heading span {
+  display: block;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  color: black;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    font-size: 1.6rem;
+  }
+}
+
+.button-white {
+  background-color: #fff;
+}
+
+section, footer, .content-area, main {
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  section, .content-area, main {
+    padding: 80px;
+  }
+}
+/*Adds padding for mobile devices, for aesthetic reasons*/
+
+.edit-post-visual-editor .editor-block-list__block .wc-block-grid__product-title, .editor-styles-wrapper .wc-block-grid__product-title, .wc-block-grid__product-title {
+  color: rgb(0, 0, 0);
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+  color: white;
+}
+/*Defines colors for buttons in the product pages, mainly for aesthetic reasons*/
+
+/*Below (line 187-312) defines important properties for the menu to look good and improve functionality, do not touch unless you know what you're doing*/
+
+.main-header {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  grid-template: 'nav logo tools';
+  
+      grid-template-columns: repeat(3, 1fr);
+  padding: 18px;
+  background-color: white;
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+} 
+
+.main-header a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.main-header__logo {
+  grid-area: logo;
+  font-family: "Baskerville", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 650) {
+  .main-header__logo {
+    font-size: 2rem;
+  }
+}
+
+.main-header__nav {
+  grid-area: nav;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-header__nav .menu {
+  display: none;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header__nav .menu .menu-item {
+  display: inline-block;
+  padding: 0 32px;
+}
+
+.main-header__nav .menu .menu-item:hover .sub-menu {
+  display: block;
+}
+
+.main-header__nav .menu-link {
+  width: 2.4rem;
+  height: 1.4rem;
+  position: relative;
+}
+
+.main-header__nav .menu-link span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 0.2rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.main-header__nav .menu-link span:first-child {
+  top: 0;
+}
+
+.main-header__nav .menu-link span:last-child {
+  bottom: 0;
+}
+
+.main-header__nav .sub-menu {
+  display: none;
+  padding: 0;
+  position: absolute;
+  background-color: #fff;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.main-header__nav .sub-menu .menu-item {
+  padding: 0;
+  display: block;
+}
+
+.main-header__nav .sub-menu .menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem 1rem;
+}
+
+.main-header__nav .sub-menu .menu-item a li {
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.main-header__nav .sub-menu .menu-item a:hover {
+  background-color: #ddd;
+}
+
+.main-header__tools {
+  grid-area: tools;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-header__tools .tools-icon {
+  padding: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    grid-template: 'logo nav tools';
+    background-color: rgb(255 255 255 / 32%);
+  }
+
+/*Below (line 321-335) defines important properties for the menu to look good and improve functionality, do not touch if you don't know what you're doing*/
+
+  .main-header__logo {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .main-header__nav {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .main-header__nav .menu {
+    display: block;
+  }
+  .main-header__nav .menu-link {
+    display: none;
+  }
+}
+/*Below can be removed if not used*/
+@media screen and (max-width: 1429px) {
+  .top-brands {
+    display: none;
+  }
+}
+
+/*WOO-COMMERCE*/
+
+/*Includes important properties, however, colors may be changed*/
+.woocommerce-info {
+  border-top-color:rgb(0, 0, 0);
+  
+}
+.woocommerce-info::before {
+  color:rgb(0, 0, 0);
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: rgb(0, 0, 0);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #000 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+
+/* Mobile Menu
+==============================================*/
+.mobile-menu {
+  display: none;
+  margin-top: 80px;
+}
+
+.mobile-menu .menu {
+  padding: 0;
+  list-style-type: none;
+}
+
+.mobile-menu .menu a {
+  padding: 0.6rem 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobile-menu .menu .menu-item:hover .sub-menu {
+  display: block;
+}
+
+.mobile-menu .sub-menu {
+  display: none;
+  padding: 0;
+  background-color: black;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.mobile-menu .sub-menu .menu-item {
+  padding: 0;
+  display: block;
+}
+
+.mobile-menu .sub-menu .menu-item a {
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem 1rem;
+}
+
+.mobile-menu .sub-menu .menu-item a li {
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.mobile-menu .sub-menu .menu-item a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* below (line 432-510) defines properties for top image in front-page.php
+==============================================*/
+.hero {
+  position: relative;
+  
+}
+
+.hero::after {
+  content: "";
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero__wrapper {
+  text-decoration: none;
+  height: 32vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+
+.hero__wrapper h1 {
+  margin: 26px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__wrapper {
+    height: 88vh;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+
+
+
+/* Shop Section */
+.shop-section__heading, .shop-section__body {
+  text-align: center;
+}
+
+
+/* Footer */
+@media screen and (max-width: 650px) {
+  .footer {
+    display: block;
+    text-align: center;
+   }
+}
+@media screen and (min-width: 650px) {
+.footer {
+  padding: 90px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  display: grid;
+}
+}
+
+@media screen and (min-width: 650px) {
+.footer-container__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .footer-container__heading {
+text-align: center;
+  }
+  }
+
+.footer-container__body {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container__body a {
+  display: block;
+  padding: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container__body {
+    display: block;
+  }
+  .footer-container__heading {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-container__heading svg {
+    display: none;
+  }
+}
+
+/* Copyright */
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.copyright__social a {
+  padding: 10px;
+}
+
+.copyright__body {
+  margin: 40px 0;
+}
+
+/* Page Hero */
+.page-hero {
+  display: -ms-grid;
+  display: grid;
+  height: 60vh;
+  background-color: #ececec;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.page-hero__heading {
+  color: #fff;
+}
+
+.page-hero__heading_shop {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
