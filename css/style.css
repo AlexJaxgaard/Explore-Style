@@ -219,13 +219,19 @@ section, footer, .content-area, main {
 .main-header__logo {
   grid-area: logo;
   font-family: "Baskerville", sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media screen and (max-width: 400) {
+  .main-header__logo {
+    font-size: 1.6rem;
+  }
 }
 
 .main-header__nav {
