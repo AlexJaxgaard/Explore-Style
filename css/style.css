@@ -35,6 +35,13 @@ body {
 color: white; 
 }
 
+
+
+
+.hero {
+    position: fixed;
+}
+
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
   background-color: black;
 }
@@ -54,8 +61,18 @@ color: white;
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-family: "Playfair Display", serif;
+  font-family: stolzl, sans-serif;
 }
+
+.woocommerce ul.products li.product .onsale {
+    display:none;
+}
+
+.woocommerce ul.products li.product .button {
+    display: none;
+}
+
+
 
 h1 {
   font-size: 3.5rem;
@@ -71,7 +88,7 @@ h2 {
     font-size: 6.5rem;
   }
 .product_title {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
 }
   
   h2 {
@@ -102,7 +119,9 @@ a:visited, a:active {
   width: 100%;
 }
 
-
+.woocommerce ul.products li.product .price {
+    color: #000000;
+}
 
 .myGallery .item {
   position: relative;
@@ -197,7 +216,7 @@ section, footer, .content-area, main {
 .main-header {
   display: -ms-grid;
   display: grid;
-  gap: 10px;
+  gap: 18px;
   grid-template: 'nav logo tools';
   
       grid-template-columns: repeat(3, 1fr);
@@ -327,7 +346,6 @@ section, footer, .content-area, main {
 @media screen and (min-width: 768px) {
   .main-header {
     grid-template: 'logo nav tools';
-    background-color: rgb(255 255 255 / 32%);
   }
 
 /*Below (line 321-335) defines important properties for the menu to look good and improve functionality, do not touch if you don't know what you're doing*/
@@ -351,6 +369,7 @@ section, footer, .content-area, main {
 @media screen and (max-width: 1429px) {
   .top-brands {
     display: none;
+    z-index: 2;
   }
 }
 
@@ -454,6 +473,7 @@ section, footer, .content-area, main {
   content: "";
   background-image: url("../images/home.jpg");
   background-size: cover;
+  margin: 5%;
   background-repeat: no-repeat;
   background-position: 100%;
   position: absolute;
@@ -463,6 +483,8 @@ section, footer, .content-area, main {
   left: 0;
   z-index: -1;
 }
+
+
 
 .hero__wrapper {
   text-decoration: none;
@@ -475,7 +497,6 @@ section, footer, .content-area, main {
 
 .hero__wrapper h1 {
   margin: 26px;
-  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -486,7 +507,9 @@ section, footer, .content-area, main {
   }
 }
 
-
+.main_title_front {
+    font-family: stolzl, sans-serif;
+}
 
 
 /* Shop Section */
@@ -573,6 +596,11 @@ text-align: center;
 .copyright__body {
   margin: 40px 0;
 }
+
+
+
+
+
 
 /* Page Hero */
 .page-hero {
