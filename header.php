@@ -52,8 +52,9 @@
             </a>
         </div>
 <!-- Above script creates icon for cart  -->
-
     </header>
+    
+
 
 
     <div class="mobile-menu">

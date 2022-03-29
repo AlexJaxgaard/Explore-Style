@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Style - Home</title>
 </head>
+
+<body style="background-color:white;">
+
 <!-- Above is used for defining meta data about the specific page. -->
 
 
 <?php get_header(); ?> <!-- Pulls header from header.php -->
 
-
+<div class="backgroundcolor">
 <section class="hero">
         <a href="/product-category/casual/" class="hero__wrapper">
             <div class="wrapper">
                 <div class="wrapper__heading" >
-                    <span>THE NEW COLLECTION</span>
-                    <h1>Classy Casual</h1>
-                    <div class="button button-white">EXPLORE NOW</div>
+                    <span>Inspired by our Nordic favourites</span>
+                    <h1>Explore Casual</h1>
                 </div>
             </div>
+
         </a>
     </section>
     <!-- Main top ad/image for new collection -->
@@ -40,7 +43,7 @@
   </div>
 </section>
 
-
+</div>
 
 <section class="shop-section">
 <h2 class="shop-section__heading">Best Sellers</h2>
