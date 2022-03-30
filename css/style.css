@@ -71,8 +71,20 @@ h1, h2, h3, h4, h5, h6 {
 .woocommerce ul.products li.product .button {
     display: none;
 }
-
-
+ /*Defines properties for the bar underneath the header*/
+.top-menu {
+   
+margin-top: 100px;    
+margin-bottom: -83px;
+    font-size: 8px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    background-color: #979797;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
 
 h1 {
   font-size: 3.5rem;
