@@ -7,14 +7,21 @@
     <title>Explore Style - Home</title>
 </head>
 
-<body style="background-color:white;">
+
 
 <!-- Above is used for defining meta data about the specific page. -->
 
 
 <?php get_header(); ?> <!-- Pulls header from header.php -->
 
-<div class="backgroundcolor">
+<div class="top-menu">
+
+  <div><span>&#10003;</span>30-day Open Purchase</div>
+  <div><span>&#10003;</span>Free Shipping Worldwide</div>
+  
+  <div><span>&#10003;</span>Click & Collect in 1hr</div>
+</div>
+
 <section class="hero">
         <a href="/product-category/casual/" class="hero__wrapper">
             <div class="wrapper">
