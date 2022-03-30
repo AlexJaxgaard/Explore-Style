@@ -73,9 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 }
  /*Defines properties for the bar underneath the header*/
 .top-menu {
-   
 margin-top: 100px;    
-margin-bottom: -83px;
+margin-bottom: -5%;
     font-size: 8px;
     font-size: 12px;
     text-align: center;
@@ -84,6 +83,44 @@ margin-bottom: -83px;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+
+@media screen and (min-width: 915px) {
+.main-header {
+    grid-template: 'logo nav tools';
+}
+}
+
+
+@media screen and (max-width: 768px) { 
+.hero::after {
+height: 105%;
+/*Top image*/    
+}
+
+.wrapper__heading span {
+font-size: 60%;
+/*Heading, Inspired by.. */
+}
+
+.hero__wrapper h1  {
+    margin: 11%;
+    /*...the nordic..*/
+}
+
+.shop-section {
+    margin-top: 10%;
+}
+
+
+
+}
+
+
+@media (max-width: 1180px) {
+  .top-menu {
+    display: none;
+  }
 }
 
 h1 {
